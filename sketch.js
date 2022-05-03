@@ -123,7 +123,7 @@ function draw() {
   background(255);
 
   // mapear datos recibidos desde perilla [0,1023] a rango color [0, 255]
-  let colorPotenciometro = map(datosSeparados[1], 0, 1023, 0, 255);
+  let colorPotenciometro = map(datosSeparados[1], 0, 1023, 200, 200);
   console.log(colorPotenciometro);
 
   // si el botón no está presionado
