@@ -123,20 +123,20 @@ function draw() {
   background(255);
 
   // mapear datos recibidos desde perilla [0,1023] a rango color [0, 255]
-  let colorPotenciometro = map(datosSeparados[1], 0, 1023, 200, 200);
+  let colorPotenciometro = map(datosSeparados[1], 0, 1023, 0, 255);
   console.log(colorPotenciometro);
 
   // si el botón no está presionado
   if (datosSeparados[0] == 0) {
 
     // potenciómetro controla cantidad de rojo
-    fill(colorPotenciometro, 0, 0);
+    fill(colorPotenciometro, 200, 0);
   }
   // si el botón está presionado
   else {
 
      // potenciómetro controla cantidad de verde
-    fill(0, colorPotenciometro, 0);
+    fill(150, colorPotenciometro, 150);
   }
 
   // dibujar elipse
